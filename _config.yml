@@ -1,0 +1,21 @@
+# Site settings
+title: 'Erick Menezes'
+email: menezes.ime@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Site pessoal
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://e-menezes.github.io" # the base hostname & protocol for your site
+github_username:  e-menezes
+exclude: ['node_modules']
+paginate: 10
+paginate_path: "/page:num/"
+permalink: /:year/:month/:title
+sass:
+  compressed: true
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Gems
+gems: [jekyll-paginate]

@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+# Site Pessoal
+### Em Construção
+
+<!--
+<div class="posts">
+  {% for post in paginator.y %}
+  <section class="post-single">
+    <header class="post-single__header">
+      <h1 class="post-single__title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h1>
+      <span class="post__meta">
+        {{ post.date | date: "%b %-d, %Y" }}
+      </span>
+      <div class="post__meta__divider"></div>
+    </header>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="post-single__content" title="Read {{ post.title }}">
+      <p>
+        {{ post.content | strip_html | truncatewords: 30 }}
+      </p>
+    </a>
+    <div class="post__button">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="button" title="Read {{ post.title }}">
+        Read more
+        <img src="{{ site.baseurl }}/img/icons/more.svg" alt="{{ post.title }}">
+      </a>
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  <ul>
+    <li id="pagination-prev">
+      {% if paginator.previous_page %}
+        <a class="pagination-button" href="{{ paginator.previous_page_path }}">
+          <img src="{{ site.baseurl }}/img/icons/prev.svg" alt="">
+        </a>
+      {% else %}
+        <span>
+          <img src="{{ site.baseurl }}/img/icons/prev.svg" alt="">
+        </span>
+      {% endif %}
+    </li>
+
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li>
+          <span id="current-page">{{ page }}</span>
+        </li>
+      {% elsif page == 1 %}
+        <li>
+          <a href="/">{{ page }}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    <li id="pagination-next">
+      {% if paginator.next_page %}
+        <a class="pagination-button" href="{{ paginator.next_page_path }}">
+          <img src="{{ site.baseurl }}/img/icons/next.svg" alt="">
+        </a>
+      {% else %}
+        <span>
+          <img src="{{ site.baseurl }}/img/icons/next.svg" alt="">
+        </span>
+      {% endif %}
+    </li>
+  </ul>
+</div>-->
+

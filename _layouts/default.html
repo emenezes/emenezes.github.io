@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main class="content">
+      <div class="action-bar">
+        <form class="search">
+          <input type="text" placeholder="Search posts">
+          <ul></ul>
+        </form>
+      </div>
+      <div class="card">
+        {% if page.url != '/angular-1-x' and page.url != '/angular-2' and page.url != '/javascript'  %}
+        {% include courses.html position="top" %}
+        {% endif %}
+        <div class="card__content">
+          {{ content }}
+        </div>
+      </div>
+      {% include footer.html %}
+    </main>
+  </body>
+</html>
