@@ -1,9 +1,14 @@
 ---
-layout: default
+title: Site Pessoal
+layout: page
+class: home
 ---
 
-# Site Pessoal
-### Em Construção
+
+<figure style="text-align: center;"> 
+  <img src="/img/under_construction.gif"/> 
+  <figcaption><h4>Circulando, nada para ver aqui.</h4></figcaption>
+</figure>
 
 <!--
 <div class="posts">
